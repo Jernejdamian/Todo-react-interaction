@@ -4,7 +4,7 @@ import Tasks from "./Tasks";
 import Section from "./Section";
 import Container from "./Container";
 
-const hideDoneTasks = false;
+const hideDone = false;
 
 const tasks = [
   {
@@ -27,11 +27,11 @@ function App() {
         extraHeaderContent={
           <Buttons
             tasks={tasks}
-            hideDoneTasks={hideDoneTasks} />}
+            hideDone={hideDone} />}
         body={
           <Tasks
             tasks={tasks}
-            hideDoneTasks={hideDoneTasks} />
+            hideDone={hideDone} />
         } />
     </Container>
   );
